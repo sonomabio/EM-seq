@@ -1,5 +1,3 @@
-export NXF_WORK=/home/ubuntu/ems_workspace/all_samples_10M/EM-seq/work
+export NXF_WORK=/home/ubuntu/ems_workspace/all_samples_10M/EM-seq/work/mbias_samples
 
-NXF_VER=22.10.4 nextflow run em-seq.nf --genome /home/ubuntu/ems_workspace/EM-seq/genome/grch38_core_bs_controls.fa --flowcell 22KKFFLT3 --fastq_glob '/home/ubuntu/ems_workspace/fastq/downsample10M/*_R{1,2}.fastq.gz' -resume -with-report -with-trace --outdir ./output
-
-# -with-dag flowchart.png 
+NXF_VER=22.10.4 nextflow run em-seq.nf --genome /home/ubuntu/ems_workspace/EM-seq/genome/grch38_core_bs_controls.fa --flowcell 22KKFFLT3 --fastq_glob /home/ubuntu/fastq_data/datahub-ngs-datasets/methylseq/Jerry_2405/01_input/{3,4,7,19,20,21}_S*_R{1,2}_001.fastq.gz -resume -with-report -with-trace --outdir ./output/mbias_samples
