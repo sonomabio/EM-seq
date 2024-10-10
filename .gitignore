@@ -1,3 +1,5 @@
 .nextflow*
 work
 output
+report*.html 
+trace*.txt
