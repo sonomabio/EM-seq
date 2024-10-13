@@ -4,7 +4,7 @@
 
 flowcell = params.flowcell
 genome = params.genome
-params.tmp_dir = '/tmp'
+params.tmp_dir = '/home/ubuntu/ems_workspace/tmp'
 outputPath = params.outdir = 'output'
 fastq_mode = params.fastq_mode = 'run_fastqs'
 println "Processing " + flowcell + "... => " + outputPath
