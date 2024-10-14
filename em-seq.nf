@@ -376,7 +376,7 @@ process mergeAndMarkDuplicates {
     process multiqc {
         cpus 1
         publishDir "${outputPath}", mode: 'copy'
-        conda "multiqc=1.7"
+        conda "multiqc"
 
         input:
             file('*') from fastqc_results.flatten().toList()
